@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.skillBody {
+  color: var(--p-color);
+  height: 60rem;
+  margin: 5px 10px;
+}
+
+
+.darkmode{
+  --p-color:white;
+ 
+}
+.lightmode{
+  --p-color:rgb(0, 0, 0);
+  
+  }
+
+
+section {
+  display: flex;
+}
+
+.myskills {
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgb(182, 129, 49),
+    rgb(246, 221, 122),
+    rgb(160, 115, 47)
+  );
+  -webkit-text-stroke: 1px rgb(30, 30, 30);
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  margin: 20px 0px 0px 20px;
+}
+
+.allskills {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  font-size: 35px;
+  margin-left: 2rem;
+  top: 6rem;
+}
+
+.allStars {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  font-size: 35px;
+  margin-left: 30px;
+  top: 6rem;
+}
+
+.fiveStars {
+  margin-bottom: 10px;
+}
+
+.fiveStars .fa-solid,
+.fiveStars .fa-regular {
+  color: rgb(213, 68, 68);
+  margin: 0px 2px;
+}
+
+.allskills p {
+  margin-bottom: 10px;
+}
+
+.fa-html5 {
+  color: rgb(245, 134, 70);
+}
+.fa-css3-alt {
+  color: rgb(87, 171, 245);
+}
+
+.fa-js {
+  color: rgb(246, 239, 49);
+}
+.fa-react {
+  color: rgb(110, 177, 236);
+}
+.fa-bootstrap {
+  color: rgb(160, 77, 224);
+}
+.fa-wordpress {
+  color: rgb(78, 97, 173);
+}
+.fa-figma {
+  color: rgb(226, 96, 96);
+}
+.fa-node-js,
+.fa-envira {
+  color: rgb(108, 185, 57);
+}
+
+:root .eachSkill1 {
+  --i: 1;
+}
+:root .eachSkill2 {
+  --i: 2;
+}
+:root .eachSkill3 {
+  --i: 3;
+}
+:root .eachSkill4 {
+  --i: 4;
+}
+:root .eachSkill5 {
+  --i: 5;
+}
+:root .eachSkill6 {
+  --i: 6;
+}
+:root .eachSkill7 {
+  --i: 7;
+}
+:root .eachSkill8 {
+  --i: 8;
+}
+:root .eachSkill9 {
+  --i: 9;
+}
+:root .eachSkill10 {
+  --i: 10;
+}
+:root .eachSkill11 {
+  --i: 11;
+}
+
+.skillRotateBigCont {
+  transform: scale(1.5);
+}
+
+.skillRotateCont {
+  display: flex;
+  position: relative;
+  top: 20rem;
+  left: 20rem;
+  width: 0vw;
+  height: 0;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  animation: anime233 10s infinite linear;
+}
+
+@keyframes anime233 {
+  0% {
+    transform: perspective(1200px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1200px) rotateY(-360deg);
+  }
+}
+
+.skillRotateh2 {
+  text-shadow: 300px -210px rgba(64, 64, 64, 0.2),
+    200px -140px rgba(64, 64, 64, 0.2), 100px -70px rgba(64, 64, 64, 0.2),
+    100px 70px rgba(54, 54, 54, 0.2), 200px 140px rgba(54, 54, 54, 0.2),
+    300px 210px rgba(54, 54, 54, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgb(182, 129, 49),
+    rgb(246, 221, 122),
+    rgb(160, 115, 47)
+  );
+  -webkit-text-stroke: 1px rgb(201, 157, 69);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(calc(var(--i) * calc(360deg / 11)))
+    translateZ(200px);
+}
+
+@media (max-width: 1000px) {
+  .myskills {
+    font-size: 7vw;
+  }
+  .allskills {
+    top: 1rem;
+    left: 23vw;
+    margin-left: -6vw;
+    font-size: 4.2vw;
+  }
+  .allStars {
+    left: 23vw;
+    margin-left: 10vw;
+    top: 1rem;
+    font-size: 4.2vw;
+  }
+
+  .skillRotateBigCont main h2 {
+    font-size: 4vw;
+  }
+
+  .skillRotateCont {
+    top: 65vw;
+    left: -3rem;
+  }
+  .skillBody {
+    height: 63rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .skillBody {
+    height: 56rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .myskills {
+    font-size: 8vw;
+  }
+  .allskills {
+    top: 0rem;
+    left: 23vw;
+    margin-left: -6vw;
+    font-size: 4.2vw;
+  }
+  .allStars {
+    left: 23vw;
+    margin-left: 10vw;
+    top: 0rem;
+    font-size: 4.2vw;
+  }
+
+  .skillRotateBigCont main h2 {
+    font-size: 4vw;
+  }
+
+  .skillRotateCont {
+    top: 65vw;
+    left: -3rem;
+  }
+  .skillBody {
+    height: 102vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .skillBody {
+    height: 110vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .myskills {
+    font-size: 8vw;
+  }
+  .allskills {
+    left: 20vw;
+    font-size: 4.5vw;
+  }
+  .allStars {
+    left: 20vw;
+    font-size: 4.5vw;
+  }
+
+  .skillRotateBigCont main h2 {
+    font-size: 4vw;
+  }
+
+  .skillRotateCont {
+    top: 70vw;
+    left: -3rem;
+  }
+  .skillBody {
+    height: 125vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .skillBody {
+    height: 130vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .myskills {
+    margin: 20px 0px 0px 0px;
+    /* font-size: 8vw; */
+  }
+
+  .allskills {
+    left: 20vw;
+    font-size: 5vw;
+  }
+  .allStars {
+    left: 20vw;
+    font-size: 5vw;
+  }
+
+  .skillRotateBigCont main h2 {
+    font-size: 5vw;
+  }
+
+  .skillRotateCont {
+    top: 80vw;
+  }
+  .skillBody {
+    height: 155vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .skillRotateCont {
+    top: 95vw;
+  }
+  .skillBody {
+    height: 175vw;
+  }
+}

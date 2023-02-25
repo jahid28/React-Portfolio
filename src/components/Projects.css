@@ -1,0 +1,183 @@
+.projectsBody {
+  height: 120rem;
+  /* border-radius: 20px; */
+  /* margin: 5px 10px; */
+  position: relative;
+}
+
+
+
+
+
+.someProjects {
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgb(182, 129, 49),
+    rgb(246, 221, 122),
+    rgb(160, 115, 47)
+  );
+  -webkit-text-stroke: 1px rgb(201, 157, 69);
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  margin: 20px 0px 0px 20px;
+}
+
+.allWebsites {
+  /* background-color: aliceblue; */
+  display: grid;
+  place-items: center;
+  grid-template-columns: 5fr 5fr 5fr;
+  /* place-items: center; */
+}
+
+.allJSprojectsCont {
+  position: relative;
+  top: 6rem;
+}
+
+.allJSprojects {
+  /* position: relative; */
+  top: 2rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 4fr 4fr 4fr;
+  /* background-color: rgb(48, 60, 60); */
+}
+
+.card {
+  background-color: rgb(198, 135, 68);
+  /* background-color: rgb(72, 72, 72); */
+  margin: 30px 0rem;
+  transition: all linear 0.1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px rgb(242, 183, 128);
+}
+
+.bgWebsites {
+  width: 0;
+  position: absolute;
+  /* position: relative; */
+}
+
+.bgWebsites p {
+  /* color: rgb(250, 3, 3); */
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(201, 157, 69);
+  font-size: 20rem;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 2.7rem;
+  left: 90rem;
+  /* margin: 2.5rem 0px; */
+}
+
+.bgProjects {
+  width: 0;
+  position: absolute;
+}
+
+.bgProjects p {
+  /* color: white; */
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(201, 157, 69);
+  font-size: 20rem;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 16rem;
+  left: -110rem;
+}
+
+
+@media (max-width: 1000px) {
+  .bgWebsites p {
+    font-size: 23vw;
+    top: 17rem;
+  }
+  .bgProjects p {
+    font-size: 26vw;
+    top: 17rem;
+  }
+
+  .allJSprojectsCont {
+    top: 0vw;
+  }
+
+  .projectsBody {
+    height: 130rem;
+  }
+
+  .someProjects {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .projectsBody {
+    height: 120rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .someProjects {
+    margin-left: 0;
+  }
+
+  .allWebsites {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .allJSprojects {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projectsBody {
+    height: 340vw;
+  }
+  .card {
+    margin: 10px 0rem;
+  }
+  .bgProjects p {
+    font-size: 26vw;
+    top: 27rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .projectsBody {
+    height: 370vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .projectsBody {
+    height: 420vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .projectsBody {
+    height: 470vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .someProjects {
+    margin-left: 0;
+    /* font-size: 8vw; */
+  }
+  .projectsBody {
+    height: 550vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .projectsBody {
+    height: 590vw;
+  }
+}

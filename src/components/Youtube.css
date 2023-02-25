@@ -1,0 +1,159 @@
+.ytBody {
+  height: 45rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.myYT {
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    rgb(182, 129, 49),
+    rgb(246, 221, 122),
+    rgb(160, 115, 47)
+  );
+  -webkit-text-stroke: 1px rgb(30, 30, 30);
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  /* position: absolute; */
+  margin: 20px 0px 0px 20px;
+}
+
+.para {
+  color: rgb(255, 255, 255);
+  font-family: "Rubik", sans-serif;
+  margin: 20px 20px;
+  font-size: 1.5rem;
+}
+
+.para span {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.9rem;
+}
+.para span a {
+  font-size: 1.9rem;
+  /* text-decoration: none; */
+  color: rgb(207, 105, 105);
+  transition: all linear 0.2s;
+}
+
+.allYTVideos {
+  /* border: 2px solid red; */
+  display: grid;
+  place-items: center;
+  position: relative;
+  grid-template-columns: 5fr 5fr 5fr;
+}
+
+.eachYTVideo {
+  margin: 10px 0px;
+}
+
+.bgYoutube {
+  width: 0;
+  position: absolute;
+  /* position: relative; */
+}
+
+.bgYoutube p {
+  color: white;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(201, 157, 69);
+  font-size: 20rem;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 16rem;
+  left: 268rem;
+}
+
+@media (max-width: 1000px) {
+  .myYT {
+    font-size: 7vw;
+  }
+  .para {
+    font-size: 3.3vw;
+  }
+  .para span a {
+    font-size: 3.3vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .ytBody {
+    height: 96vw;
+  }
+  .myYT {
+    font-size: 8vw;
+  }
+  .para {
+    font-size: 3.7vw;
+  }
+  .para span a {
+    font-size: 3.7vw;
+  }
+
+  .removeYTVidAt800px {
+    display: none;
+  }
+  .allYTVideos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .ytBody {
+    height: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .ytBody {
+    height: 110vw;
+  }
+  .para {
+    font-size: 3.9vw;
+    margin: 5px 5px;
+  }
+  .para span a {
+    font-size: 3.9vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .ytBody {
+    height: 115vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .myYT {
+    margin-left: 0;
+    /* font-size: 8.5vw; */
+  }
+  .ytBody {
+    height: 130vw;
+  }
+  .para {
+    font-size: 4.5vw;
+  }
+  .para span a {
+    font-size: 4.5vw;
+  }
+}
+@media (max-width: 350px) {
+  .myYT {
+    margin-left: 0;
+    /* font-size: 8.5vsw; */
+  }
+  .ytBody {
+    height: 130vw;
+  }
+  .para {
+    font-size: 4.5vw;
+  }
+  .para span a {
+    font-size: 4.5vw;
+  }
+}

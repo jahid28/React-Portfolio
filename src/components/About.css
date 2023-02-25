@@ -1,0 +1,79 @@
+.aboutBody {
+  color: var(--p-color);
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--img-about);
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  /* font-family: "Fira Mono", monospace; */
+}
+
+
+.darkmode{
+  --p-color:white;
+  --img-about:url(Screenshot\ \(121\).png) no-repeat center;
+}
+
+.lightmode{
+  --p-color:rgb(0, 0, 0);
+ --img-about:nill;
+  
+  }
+
+
+.mainContent {
+  margin: 0 3rem;
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.aboutImg {
+  margin: 0 4rem 0 0;
+  /* box-shadow: 0 0 10px 0 rgb(223, 153, 83); */
+  border-radius: 10px;
+}
+
+.aboutImg img {
+  width: 20rem;
+  /* height:20rem; */
+  border-radius: 10px;
+}
+
+.aboutContent p {
+  font-size: 1.3rem;
+}
+
+.aboutContent span {
+  color: rgb(219, 97, 97);
+  position: relative;
+  /* left: 36rem; */
+}
+
+@media (max-width: 1100px) {
+  .aboutContent p {
+    font-size: 2vw;
+  }
+  .aboutImg img {
+    width: 30vw;
+  }
+ 
+}
+
+@media (max-width: 800px) {
+  .mainContent {
+    margin: 0 5vw;
+    display: block;
+  }
+  .aboutContent p {
+    font-size: 3.3vw;
+  }
+  .aboutImg {
+    display: grid;
+    place-items: center;
+    margin: 0 0 2rem 0;
+  }
+  .aboutImg img {
+    width: 50vw;
+  }
+}

@@ -1,0 +1,114 @@
+.footerBody {
+  height: 10rem;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  place-items: center;
+  font-size: 1.7rem;
+  /* position: relative; */
+  top: 1.5rem;
+  overflow: hidden;
+  /* margin-top: 20px; */
+  /* border: 2px solid rgb(190, 36, 36); */
+}
+
+.contact button,
+.resume button {
+  font-size: 1.1rem;
+  color: white;
+  padding: 5px 15px;
+  /* z-index: 1; */
+  position: absolute;
+  background-color: rgb(20, 20, 20);
+  border: 2px solid rgb(239, 156, 54);
+  box-shadow: inset 0px 0px 0px 0px rgb(229, 148, 56);
+  /* margin: 5px 100px; */
+  position: relative;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.contact button:hover,
+.resume button:hover {
+  box-shadow: inset 12rem 0px 0px 0px rgb(229, 148, 56);
+}
+
+.socialUL {
+  position: relative;
+  left: -2.5rem;
+  display: flex;
+}
+
+.socialUL li {
+  list-style: none;
+  margin: 0px 10px;
+  font-size: 1.6rem;
+  /* cursor: pointer; */
+}
+
+.socialUL li a {
+  transition: all linear 0.2s;
+  color: white;
+}
+
+.socialUL li a:hover {
+  color: rgb(239, 156, 54);
+}
+
+@media (max-width: 1000px) {
+  .connect p {
+    font-size: 3.3vw;
+  }
+  .socialUL li {
+    font-size: 3vw;
+  }
+  .contact {
+    font-size: 3.3vw;
+  }
+  .contact button {
+    font-size: 2vw;
+  }
+  .resume {
+    font-size: 3.3vw;
+  }
+  .resume button {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .resume {
+    display: none;
+  }
+  .footerBody {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .connect p,
+  .contact,
+  .socialUL li {
+    font-size: 4vw;
+  }
+
+  .contact button {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .connect {
+    width: 45vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .contact {
+    width: 40vw;
+    position: relative;
+    left: -3vw;
+  }
+  /* .footerBody {
+    height: 5rem;
+  } */
+}

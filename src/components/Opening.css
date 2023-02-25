@@ -1,0 +1,154 @@
+.body {
+  
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: var(--op);
+  background:var(--bg-img);
+  background-size: cover;
+}
+
+.framer {
+  z-index: 111;
+}
+
+.darkmode{
+--transition:url(JK.png) no-repeat center;
+--bg-img: url(background-5035258_1920.jpg)  no-repeat center;
+--op:0.4;
+--pp-color:rgb(255, 255, 255);
+--name-color:rgb(230, 185, 38);
+}
+
+.lightmode{
+  --transition:url(light\ mode\ transition.png) no-repeat center;
+  --bg-img: url(pexels-gdtography-911738.jpg)  no-repeat center; 
+  --op:1;
+  --pp-color:rgb(0, 0, 0);
+  --name-color:rgb(141, 89, 21);
+
+}
+
+
+.transition {
+  z-index: 111;
+  height: 100vh;
+  width: 100vw;
+  background: var(--transition);
+  background-size: cover;
+}
+
+
+
+
+.myVideo {
+  border: 2px solid rgb(46, 45, 45);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -91;
+}
+
+.hi {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 40px;
+  color: var(--pp-color);
+}
+.welcome {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: var(--pp-color);
+  z-index: 99;
+}
+
+.heading{
+  position: relative;
+  top: 100px;
+}
+
+.heading h1 {
+  color: var(--name-color);
+
+  font-size: 70px;
+}
+
+#myname {
+  font-size: 8rem;
+  font-weight: 300;
+  font-family: "Grey Qo", cursive;
+  position: relative;
+}
+
+.arrow {
+  color: #e24444;
+  transform: scale(1.5);
+  position: absolute;
+  animation: arrow linear infinite 1s;
+}
+
+.anchor {
+  position: absolute;
+  top: 0vh;
+}
+
+@keyframes arrow {
+  0% {
+    top: 85vh;
+  }
+  50% {
+    top: 86vh;
+  }
+  100% {
+    top: 85vh;
+  }
+}
+
+#upArrow {
+  position: absolute;
+}
+
+.fa-circle-chevron-up {
+  z-index: 99;
+  font-size: 2rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  color: rgb(226, 68, 68);
+  transition: all linear 0.3s;
+}
+
+/* .fa-circle-chevron-up:hover {
+  color: white;
+} */
+
+@media (max-width: 426px) {
+  .fa-circle-chevron-up {
+    font-size: 7vw;
+  }
+  .hi {
+    font-size: 10vw;
+  }
+  #myname {
+    font-size: 25vw;
+  }
+  .welcome {
+    font-size: 4vw;
+  }
+}

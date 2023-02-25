@@ -1,0 +1,118 @@
+.header {
+  background-color: #eb5353;
+  /* background-color: red; */
+  height: 100%;
+  /* top: 0; */
+  transition: all linear 0.2s;
+  z-index: 98;
+  position: fixed;
+  right: -12rem;
+  top: 0;
+  overflow: hidden;
+}
+
+.header.active {
+  right: 0rem;
+}
+
+.header ul {
+  padding: 5rem 0;
+  display: block;
+  margin: 0 2rem;
+}
+
+.toggle {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  position: relative;
+  width: 6rem;
+  display: flex;
+  border-radius: 20px;
+
+  top: 6rem;
+  left: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-sun,
+.fa-moon {
+  /* margin-right: 1rem; */
+  /* margin-top: 1rem; */
+  /* text-align: center; */
+  font-size: 1.5rem;
+  color: rgb(240, 188, 45);
+  /* padding: 5px; */
+  /* border-radius: 100px; */
+  /* transition: all linear .3s; */
+  /* border: 2px solid white; */
+}
+.fa-sun {
+  position: relative;
+  top: 0.3rem;
+  left: 0.5rem;
+}
+.fa-moon {
+  position: relative;
+  left: 2.7rem;
+  top: 0.3rem;
+}
+
+.dot {
+  transition: all linear 0.2s;
+  transform: scale(1.7);
+  position: relative;
+  top: 0.45rem;
+  left: -2rem;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  background-color: rgb(30, 30, 30);
+}
+
+.dot.active {
+  left: 1.3rem;
+}
+
+.allLists {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  /* list-style: none; */
+  /* background: none; */
+  margin: 3rem 0vh;
+  text-align: center;
+}
+
+.allLinks {
+  transition: all linear 0.2s;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  margin-left: 0vw;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(235, 83, 83);
+  margin: 40px 0px;
+}
+
+.allLinks:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#tog {
+  z-index: 99;
+  font-size: 2rem;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  color: rgb(235, 83, 83);
+  transition: all linear 0.3s;
+}
+
+#tog.active {
+  color: white;
+}
+
+/* #tog:hover {
+  color: white;
+} */

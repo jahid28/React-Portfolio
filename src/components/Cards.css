@@ -1,0 +1,100 @@
+.cardBody {
+  transform: scale(1);
+}
+
+
+.darkmode{
+  --p-color:white;
+
+}
+.lightmode{
+  --p-color:rgb(0, 0, 0);
+  
+  }
+
+
+.cards {
+  transition: all linear 0.3s;
+}
+
+.card {
+  /* border: 2px solid red; */
+  width: 18rem;
+}
+
+.card-title {
+  text-align: center;
+  /* color: whi; */
+  color: var(--p-color);
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.card-text {
+  text-align: center;
+
+  color: var(--p-color);
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .cardBody {
+    margin-right: 2vw;
+  }
+
+  .card {
+    width: 30vw;
+  }
+
+  .card-img-top {
+    width: 30vw;
+  }
+  .card-title {
+    font-size: 3.6vw;
+  }
+  .card-text {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 800px) {
+  .cardBody {
+    margin-right: 0vw;
+  }
+
+  .card {
+    width: 45vw;
+  }
+
+  .card-img-top {
+    width: 45vw;
+  }
+  .card-title {
+    font-size: 5vw;
+  }
+  .card-text {
+    font-size: 2.6vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-title {
+    font-size: 5.4vw;
+  }
+  .card-text {
+    font-size: 2.9vw;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .card-title {
+    font-size: 6vw;
+  }
+  .card-text {
+    font-size: 3.5vw;
+  }
+}

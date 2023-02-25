@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  /* scroll-behavior: smooth; */
+  padding: 0;
+}
+
+.darkmode{
+  --bg-color:rgb(30, 30, 30);
+}
+.lightmode{
+  --bg-color:rgb(255, 255, 255);
+}
+
+
+*::selection{
+  color: #1e1e1e;
+  background-color:  #cda44b;
+}
+
+.appBody {
+  font-family: "Rubik", sans-serif;
+  /* background-color: rgb(30, 30, 30); */
+  background-color: var(--bg-color);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(205, 164, 75);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+}
+

@@ -1,0 +1,57 @@
+.YtVideoBody {
+  width: fit-content;
+}
+
+.video {
+  /* border: 2px solid red; */
+  width: 21.36rem;
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+.YtvidButton {
+  background-color: rgb(211, 90, 90);
+  border-radius: 5px;
+  padding: 2px 4px;
+  position: absolute;
+  transform: rotate(-10deg);
+}
+
+.YtvidButton a {
+  text-decoration: none;
+  color: white;
+}
+
+.YtvidButton:hover {
+  background-color: rgb(204, 52, 52);
+}
+
+@media (max-width: 1500px) {
+  .YtvidButton {
+    padding: 1px;
+  }
+  .YtvidButton a {
+    font-size: 1vw;
+  }
+
+  .video {
+    margin-right: 1rem;
+    width: 30vw;
+    height: 17vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .YtvidButton {
+    padding: 3px;
+  }
+  .YtvidButton a {
+    font-size: 3.2vw;
+  }
+
+  .video {
+    margin-right: 0rem;
+    width: 45vw;
+    height: 25vw;
+  }
+}
